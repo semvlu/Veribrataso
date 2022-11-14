@@ -11,7 +11,6 @@ import scipy.stats as stats
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-os.chdir("C:/Users/David/Desktop/Good")
 
 y = []
 sr = []
