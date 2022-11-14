@@ -8,14 +8,14 @@ import matplotlib.pyplot as plt
 
 # INPUT FILE!!!
 y, sr = librosa.load("*.wav") # MUST BE INT SECONDS
-t = (librosa.get_duration(y=y, sr=sr))
+t = librosa.get_duration(y=y, sr=sr)
 t = int(t)
 # Number of samples in normalized_tone
 N = sr * t
 yf = rfft(y)
 xf = rfftfreq(N, 1 / sr)
 
-plt.plot((xf), (np.abs(yf)))
+plt.plot(xf, np.abs(yf))
 plt.xlim([0, 8000])
 
 plt.title('Harmonics Response')
