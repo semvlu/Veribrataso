@@ -58,7 +58,7 @@ for i in range(0, len(f0)):
 # mean
 mu = sum / len(f0)
 
-# sum = E(x^2)
+# exp2 = E(x^2)
 exp2 = 0
 for i in range(0, len(f0)):
     exp2 += pow(f0[int(i)], 2)
